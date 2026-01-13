@@ -38,21 +38,21 @@
                   <Component id="btnKembali" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
                       <Component id="btnTambah" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="btnUbah" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="btnHapus" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="btnLaporan" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="txttanggal" alignment="1" pref="350" max="32767" attributes="0"/>
-                      <Component id="txtnama" alignment="1" max="32767" attributes="0"/>
-                      <Component id="txtid" alignment="1" max="32767" attributes="0"/>
-                      <Component id="txtjabatan" alignment="1" max="32767" attributes="0"/>
-                      <Component id="txtfoto" alignment="1" max="32767" attributes="0"/>
-                  </Group>
+                  <Component id="txttanggal" alignment="1" max="32767" attributes="0"/>
+                  <Component id="txtnama" alignment="1" max="32767" attributes="0"/>
+                  <Component id="txtid" alignment="1" max="32767" attributes="0"/>
+                  <Component id="txtjabatan" alignment="1" max="32767" attributes="0"/>
+                  <Component id="txtfoto" alignment="1" max="32767" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
           </Group>
@@ -109,6 +109,7 @@
                   <Component id="btnHapus" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="btnTambah" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="btnKembali" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnLaporan" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="48" max="32767" attributes="0"/>
               <Component id="txtcari" min="-2" max="-2" attributes="0"/>
@@ -235,6 +236,14 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtcariActionPerformed"/>
         <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtcariKeyPressed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnLaporan">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cetak Laporan"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLaporanActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

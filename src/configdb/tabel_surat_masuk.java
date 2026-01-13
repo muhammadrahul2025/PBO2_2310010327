@@ -4,6 +4,7 @@
  */
 package configdb;
 
+import java.io.File;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Driver;
@@ -15,6 +16,14 @@ import java.sql.SQLException;
 import javax.swing.JOptionPane;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
+import net.sf.jasperreports.engine.JasperCompileManager;
+import net.sf.jasperreports.engine.JasperFillManager;
+import net.sf.jasperreports.engine.JasperPrint;
+import net.sf.jasperreports.engine.JasperReport;
+import net.sf.jasperreports.engine.design.JRDesignQuery;
+import net.sf.jasperreports.engine.design.JasperDesign;
+import net.sf.jasperreports.engine.xml.JRXmlLoader;
+import net.sf.jasperreports.view.JasperViewer;
 
 /**
  * 
@@ -162,6 +171,21 @@ public class tabel_surat_masuk {
                komponenTable.setModel(modelTable);
            } catch (Exception e) {
            
+        }
+     }
+           public void cetakLaporan(String fileLaporan, String SQL){
+        try {
+            File file = new File(fileLaporan);
+            JasperDesign jasDes = JRXmlLoader.load(file);
+            JRDesignQuery query = new JRDesignQuery();
+            query.setText(SQL);
+            jasDes.setQuery(query);
+            JasperReport jr = JasperCompileManager.compileReport(jasDes);
+            JasperPrint jp = JasperFillManager.fillReport(jr, null, this.koneksi);
+            JasperViewer.viewReport(jp);
+            
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e.getMessage());
         }
 }
 

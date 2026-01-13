@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="206a09ac-d451-43e6-a89b-77799ddc0685">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from tabel_surat_masuk;]]>
+	</queryString>
+	<field name="id_surat_masuk" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="no_surat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tanggal_surat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tanggal_diterima" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pengirim" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="perihal" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="keterangan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="file_surat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tanggal_dibuat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<group name="id_surat_masuk">
+		<groupExpression><![CDATA[$F{id_surat_masuk}]]></groupExpression>
+	</group>
+	<group name="no_surat">
+		<groupExpression><![CDATA[$F{no_surat}]]></groupExpression>
+	</group>
+	<group name="tanggal_surat">
+		<groupExpression><![CDATA[$F{tanggal_surat}]]></groupExpression>
+	</group>
+	<group name="tanggal_diterima">
+		<groupExpression><![CDATA[$F{tanggal_diterima}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="23" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="2" width="74" height="20" uuid="04beb68f-f55f-47b6-96f4-be4a153d31b5"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<text><![CDATA[id_surat_masuk]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="74" y="2" width="45" height="20" uuid="12ecdab3-2de1-4838-be92-84eb7d1618fd"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<text><![CDATA[no_surat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="119" y="2" width="67" height="20" uuid="cefcc9ee-adc9-497b-b72a-cd0718bcb75c"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<text><![CDATA[tanggal_surat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="186" y="2" width="82" height="20" uuid="f8102369-3fb5-4c3a-9615-6d7048bb6a04"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<text><![CDATA[tanggal_diterima]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="268" y="2" width="46" height="20" uuid="db4dc7f5-30a4-405c-bc22-6d69a97613f5"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<text><![CDATA[pengirim]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="314" y="2" width="35" height="20" uuid="6358e9ee-b0ff-4c5f-ae61-4c12f12877a2"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<text><![CDATA[perihal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="349" y="2" width="56" height="20" uuid="dd629905-2718-47b7-baf4-5c9bb0d0f365"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<text><![CDATA[keterangan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="405" y="2" width="46" height="20" uuid="f4cf74bc-7782-404e-a61e-781cc5c14212"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<text><![CDATA[file_surat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="451" y="2" width="69" height="20" uuid="9dc82283-1e68-4677-8c36-02ed01f6130c"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<text><![CDATA[tanggal_dibuat]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="23" splitType="Stretch">
+			<textField>
+				<reportElement x="74" y="0" width="45" height="20" uuid="41402bc8-bf8a-446a-8087-2bb7e989fa91"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{no_surat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="74" height="20" uuid="51f3fe3e-442a-41d1-8eb6-3fb44f52ae54"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{id_surat_masuk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="119" y="0" width="67" height="20" uuid="5d61d5b1-f80e-48a7-a40f-131631b16a3e"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{tanggal_surat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="186" y="0" width="82" height="20" uuid="306e1b73-1176-49bc-88bc-0bfeb7e7042d"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{tanggal_diterima}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="268" y="0" width="46" height="20" uuid="4d6c34b1-6991-488d-a107-23d8756fe755"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{pengirim}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="314" y="0" width="35" height="20" uuid="bee745ba-9092-4f18-a152-84b2c19c1ac9"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{perihal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="349" y="0" width="56" height="20" uuid="a9cba640-0e57-4e13-a648-8349dc5a09f2"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{keterangan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="405" y="0" width="46" height="20" uuid="d83458e2-4bff-496f-9e54-661a1936fde4"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{file_surat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="451" y="0" width="69" height="20" uuid="fb66afc0-e596-47e1-86c2-9b7c9544bb06"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{tanggal_dibuat}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

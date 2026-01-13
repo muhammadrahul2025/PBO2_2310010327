@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f937c26e-fac9-462b-8480-fe8364f3b46e">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from tabel_kurban;]]>
+	</queryString>
+	<field name="id_kurban" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jenis_kurban" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tanggal_kurban" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="catatan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tanggal_dibuat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<group name="id_kurban">
+		<groupExpression><![CDATA[$F{id_kurban}]]></groupExpression>
+	</group>
+	<group name="nama">
+		<groupExpression><![CDATA[$F{nama}]]></groupExpression>
+	</group>
+	<group name="jenis_kurban">
+		<groupExpression><![CDATA[$F{jenis_kurban}]]></groupExpression>
+	</group>
+	<group name="tanggal_kurban">
+		<groupExpression><![CDATA[$F{tanggal_kurban}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="1" width="68" height="20" uuid="1187786f-1a3e-4ee0-9b43-805671138d7b"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<text><![CDATA[id_kurban]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="68" y="1" width="81" height="20" uuid="1a16a4b8-3960-4e94-80d2-adfadd85efdc"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<text><![CDATA[nama]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="149" y="1" width="79" height="20" uuid="6698f1a0-fd3e-47dd-a93f-1a02b6c357be"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<text><![CDATA[jenis_kurban]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="228" y="1" width="100" height="20" uuid="a8eeaa12-b4a7-4cc5-8c9c-daf23d9cdffa"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<text><![CDATA[tanggal_kurban]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="328" y="1" width="100" height="20" uuid="d344010e-b6f8-468a-9b99-cc48c0298529"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<text><![CDATA[catatan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="428" y="1" width="100" height="20" uuid="ffdfa6cc-6f84-48f9-9ca8-82bd84f4ce1a"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<text><![CDATA[tanggal_dibuat]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="68" height="20" uuid="d72b0c95-2379-4be2-8014-822172c508cd"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{id_kurban}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="68" y="0" width="81" height="20" uuid="b0a1ff44-398d-482f-ac39-ad6bc29fe045"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="149" y="0" width="79" height="20" uuid="e05d41dd-b278-44ba-b37b-4b51f064065c"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{jenis_kurban}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="228" y="0" width="100" height="20" uuid="8924ed6c-40c9-4c2f-a511-f95d60866e3a"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{tanggal_kurban}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="328" y="0" width="100" height="20" uuid="477e1c19-a531-4ee2-80ff-fda5581cdd40"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{catatan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="428" y="0" width="100" height="20" uuid="049d2d66-5039-4672-948f-e21b19bd447b"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{tanggal_dibuat}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

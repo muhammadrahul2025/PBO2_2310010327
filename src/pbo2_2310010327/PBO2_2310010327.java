@@ -17,6 +17,9 @@ public class PBO2_2310010327 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        java.awt.EventQueue.invokeLater( () -> {
+        new frameUtama().setVisible(true);
+    });
     }
     
 }

@@ -54,6 +54,8 @@
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Component id="jLabel5" alignment="0" min="-2" pref="124" max="-2" attributes="0"/>
                                           <Component id="jLabel4" alignment="0" min="-2" pref="116" max="-2" attributes="0"/>
+                                          <Component id="btnKembali" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="btnLaporan" alignment="0" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>
                                   </Group>
@@ -71,8 +73,6 @@
                       </Group>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
-                      <Component id="btnKembali" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="btnTambah" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="btnUbah" min="-2" max="-2" attributes="0"/>
@@ -136,10 +136,12 @@
                   <Component id="btnTambah" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="btnKembali" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="125" max="32767" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="btnLaporan" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace pref="34" max="32767" attributes="0"/>
               <Component id="txtcari" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="jScrollPane1" min="-2" pref="323" max="-2" attributes="0"/>
@@ -268,6 +270,14 @@
     <Component class="javax.swing.JTextField" name="txtcari">
       <Events>
         <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtcariKeyPressed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnLaporan">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cetak Laporan"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLaporanActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

@@ -56,6 +56,7 @@ public class frameZakat extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         tableZakat = new javax.swing.JTable();
         txtcari = new javax.swing.JTextField();
+        btnLaporan = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -135,6 +136,13 @@ public class frameZakat extends javax.swing.JFrame {
             }
         });
 
+        btnLaporan.setText("Cetak Laporan");
+        btnLaporan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLaporanActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -164,7 +172,9 @@ public class frameZakat extends javax.swing.JFrame {
                                     .addGroup(layout.createSequentialGroup()
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(btnKembali)
+                                            .addComponent(btnLaporan))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(txtbuat)
@@ -175,8 +185,6 @@ public class frameZakat extends javax.swing.JFrame {
                             .addComponent(txtnama)
                             .addComponent(txtid, javax.swing.GroupLayout.DEFAULT_SIZE, 229, Short.MAX_VALUE)))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(btnKembali)
-                        .addGap(18, 18, 18)
                         .addComponent(btnTambah)
                         .addGap(18, 18, 18)
                         .addComponent(btnUbah)
@@ -227,9 +235,11 @@ public class frameZakat extends javax.swing.JFrame {
                     .addComponent(btnUbah)
                     .addComponent(btnTambah)
                     .addComponent(btnKembali))
-                .addContainerGap(125, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(btnLaporan)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(34, Short.MAX_VALUE)
                 .addComponent(txtcari, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 323, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -294,6 +304,10 @@ public class frameZakat extends javax.swing.JFrame {
         zakat.tampilData(tableZakat, cari);
     }//GEN-LAST:event_txtcariKeyPressed
 
+    private void btnLaporanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLaporanActionPerformed
+    zakat.cetakLaporan("src/laporan/laporanZakat.jrxml", "SELECT * FROM tabel_zakat");      // TODO add your handling code here:
+    }//GEN-LAST:event_btnLaporanActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -332,6 +346,7 @@ public class frameZakat extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnHapus;
     private javax.swing.JButton btnKembali;
+    private javax.swing.JButton btnLaporan;
     private javax.swing.JButton btnTambah;
     private javax.swing.JButton btnUbah;
     private javax.swing.JLabel jLabel1;
